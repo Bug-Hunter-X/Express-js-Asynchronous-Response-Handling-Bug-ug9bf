@@ -1,0 +1,3 @@
+# Express.js Asynchronous Response Handling Bug
+
+This repository demonstrates a common error in Express.js applications involving asynchronous operations and response handling. The bug occurs when an asynchronous operation is performed within a route handler, and the `res.send()` method is called after the operation completes. If the operation takes longer than expected, the client request may hang.
